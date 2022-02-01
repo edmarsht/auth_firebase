@@ -22,9 +22,16 @@ function Signup() {
               </label>
               <input name="password" type="password" required id="signUpPassword" />
             </div>
+            <div className="input__section">
+              <label htmlFor="signUpPasswordrepeat">
+                <h3>Confirm Password</h3>
+              </label>
+              <input name="passwordrepeat" type="password" required id="signUpPasswordrepeat" />
+            </div>
+            <button className="color__button">Submit</button>
           </form>
 
-          
+        
         </div>
       </div>
     </div>

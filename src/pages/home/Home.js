@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="home">
       <div className="home__title section__margin">
-        <h1>Sign In & Sign out</h1>
+        <h1>Sign In & Sign out Auth Firebase</h1>
       </div>
     </div>
   );

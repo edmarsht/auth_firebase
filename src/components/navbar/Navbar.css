@@ -12,6 +12,11 @@
   margin-right: 1rem;
 }
 
+.color__logout {
+    background: #470084;
+    color: white;
+}
+
 button {
   padding: 0.7em 1.7em;
   color: #470084;
@@ -29,5 +34,5 @@ button:hover {
 }
 
 button:active {
-  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+    transform: scale(1.1);
 }

@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <Link to="/">
-        <h1>Navbar</h1>
+        <h1>Auth-Firebase</h1>
       </Link>
       <div className="navbar__button">
         <Link to="/signup">
@@ -16,7 +16,7 @@ function Navbar() {
           <button>Sign in</button>
         </Link>
         <Link to="/logout">
-          <button>Log out</button>
+          <button className="color__logout">Log out</button>
         </Link>
       </div>
     </div>
