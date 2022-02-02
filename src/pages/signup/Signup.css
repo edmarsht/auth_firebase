@@ -10,7 +10,7 @@
   color: #470084;
   background: white;
   width: 450px;
-  height: 500px;
+  height: 530px;
   text-align: center;
   box-shadow: #DCCFFB 0px 4px 19px 0px;
 
@@ -48,13 +48,18 @@ form input {
 }
 
 form button {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .color__button {
     background: #470084;
     color: white;
     width: 150px;
+}
+
+.error__message {
+    margin: 1rem 0;
+    color: red;
 }
 
 
