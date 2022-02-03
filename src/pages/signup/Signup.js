@@ -5,9 +5,10 @@ import "./Signup.css";
 
 function Signup() {
   // test est la valeur que j'ai fait passer, j'utilise ensuite le hook useContext pour récupérer le context UserContext
-  const { test, signUp } = useContext(UserContext);
+  const { signUp } = useContext(UserContext);
 
   const [validation, setValidation] = useState("");
+
   const navigate = useNavigate();
 
   const inputs = useRef([]);
@@ -17,6 +18,7 @@ function Signup() {
       inputs.current.push(el);
     }
   };
+
   const formRef = useRef();
   const handleForm = async (e) => {
     // Comportement par défault pour ne pas avoir le rafraichissement
@@ -43,7 +45,6 @@ function Signup() {
       // Puis on supprime message d'erreur 
       setValidation("");
       navigate("./private/private-home")
-      console.log(cred)
     } catch (err) {
         if(err.code === "auth/invalid-email") {
             setValidation("Email format invalid")

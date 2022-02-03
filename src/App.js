@@ -19,6 +19,9 @@ function App() {
         <Route path="/signup/private" element={<Private />}>
           <Route path="/signup/private/private-home" element={<PrivateHome/>} />
         </Route>
+        <Route path="/signin/private" element={<Private />}>
+          <Route path="/signin/private/private-home" element={<PrivateHome/>} />
+        </Route>
       </Routes>
     </div>
   );
