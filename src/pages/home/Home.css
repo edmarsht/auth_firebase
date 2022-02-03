@@ -9,3 +9,20 @@
 .home__title h1 {
     font-size: 38px;
 }
+
+.container__connected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.container__connected h1 {
+    margin-bottom: 1.5rem;
+}
+
+.noshadow {
+    box-shadow: none;
+    width: 150px;
+}
+

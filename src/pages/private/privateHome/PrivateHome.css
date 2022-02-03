@@ -1,0 +1,24 @@
+.privatehome {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.privatehome__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+.privatehome__container h1 {
+ background: white;
+ border-radius: 20px;
+ margin: 4rem;
+ padding: 2rem;
+ color: #470084;
+}
+.privatehome__container img {
+ background: white;
+ border-radius: 20px;
+ padding: 1rem;
+ color: #470084;
+}

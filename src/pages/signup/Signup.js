@@ -1,5 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import { UserContext } from "../../context/userContext";
+import { useNavigate } from "react-router-dom";
 import "./Signup.css";
 
 function Signup() {
@@ -7,6 +8,7 @@ function Signup() {
   const { test, signUp } = useContext(UserContext);
 
   const [validation, setValidation] = useState("");
+  const navigate = useNavigate();
 
   const inputs = useRef([]);
   const addInputs = (el) => {
@@ -40,6 +42,7 @@ function Signup() {
       formRef.current.reset();
       // Puis on supprime message d'erreur 
       setValidation("");
+      navigate("./private/private-home")
       console.log(cred)
     } catch (err) {
         if(err.code === "auth/invalid-email") {
