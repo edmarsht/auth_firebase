@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./Signup.css";
 
 function Signup() {
-  // test est la valeur que j'ai fait passer, j'utilise ensuite le hook useContext pour récupérer le context UserContext
+  // signUp est la fonction que j'ai fait passer
   const { signUp } = useContext(UserContext);
 
   const [validation, setValidation] = useState("");

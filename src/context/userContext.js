@@ -33,10 +33,8 @@ export function UserContextProvider(props) {
     }, [])
 
 
-const [test, setTest] = useState("ok")
-
 return (
-    <UserContext.Provider value={{test, signUp, signIn, currentUser}}>
+    <UserContext.Provider value={{ signUp, signIn, currentUser}}>
         {!loadingData && props.children}
     </UserContext.Provider>
 

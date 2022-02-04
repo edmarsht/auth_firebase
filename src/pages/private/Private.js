@@ -3,7 +3,7 @@ import {UserContext} from "../../context/userContext";
 // Outlet --> montre des routes imbriqués avec React router V6
 // useLocation --> Permet d'avoir des infos sur la location 
 // Navigate --> premet de naviguer
-import {Outlet, useLocation, Navigate} from "react-router-dom"
+import {Outlet, Navigate} from "react-router-dom"
 
 function Private() {
 

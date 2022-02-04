@@ -17,6 +17,7 @@
     color: white;
 }
 
+
 button {
   padding: 0.7em 1.7em;
   color: #470084;
@@ -36,4 +37,9 @@ button:hover {
 
 button:active {
     transform: scale(1.1);
+}
+
+.active button {
+  background: #470084;
+  color: white;
 }

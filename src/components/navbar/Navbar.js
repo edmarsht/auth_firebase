@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../../firebase-config";
@@ -22,26 +22,26 @@ function Navbar() {
   };
   return (
     <div className="navbar">
-      <Link to="/">
+      <NavLink to="/">
         <h1>Auth-Firebase</h1>
-      </Link>
+      </NavLink>
 
       {!currentUser ? (
         <div className="navbar__button">
-          <Link to="/signup">
+          <NavLink to="/signup"     className={({ isActive }) => (isActive ? 'active' : '')}>
             <button>Sign up</button>
-          </Link>
-          <Link to="/signin">
+          </NavLink>
+          <NavLink to="/signin">
             <button>Sign in</button>
-          </Link>
+          </NavLink>
         </div>
       ) : (
       <div className="navbar__button">
-        <Link to="/logout">
+        <NavLink to="/logout">
           <button onClick={logout} className="color__logout">
             Log out
           </button>
-        </Link>
+        </NavLink>
       </div>
       )}
     </div>
