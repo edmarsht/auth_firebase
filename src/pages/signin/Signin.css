@@ -9,8 +9,9 @@
     border-radius: 20px;
     color: #470084;
     background: white;
-    width: 450px;
-    height: 420px;
+    width: auto;
+    height: auto;
+    padding: 1rem 8rem;
     text-align: center;
     box-shadow: #DCCFFB 0px 4px 19px 0px;
 }
@@ -57,5 +58,17 @@
       font-weight: bold;
   }
  
+  @media screen and (max-width: 650px) {
+    .signin__container {
+      padding: 1rem 4rem;
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .signin__container {
+      padding: 1rem 2rem;
+      width: auto;
+    }
+  }
   
   

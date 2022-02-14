@@ -8,6 +8,7 @@
     justify-content: center;
     flex-direction: column;
     align-content: center;
+    align-items: center;
 }
 .privatehome__container h1 {
  background: white;
@@ -22,3 +23,20 @@
  padding: 1rem;
  color: #470084;
 }
+
+
+@media screen and (max-width: 720px) {
+    .privatehome__container h1 {
+        text-align: center;
+    }
+    .privatehome__container img {
+        margin: 2rem;
+        width: 400px;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .privatehome__container img {
+        margin: 1rem;
+        width: 300px;
+    }
+  }

@@ -9,11 +9,11 @@
   border-radius: 20px;
   color: #470084;
   background: white;
-  width: 450px;
-  height: 530px;
+  padding: 1rem 8rem;
+  width: auto;
+  height: auto;
   text-align: center;
   box-shadow: #DCCFFB 0px 4px 19px 0px;
-
 }
 
 .signup__container h1 {
@@ -63,3 +63,16 @@ form button {
 }
 
 
+
+@media screen and (max-width: 650px) {
+  .signup__container {
+    padding: 1rem 4rem;
+    width: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .signup__container {
+    padding: 1rem 2rem;
+    width: auto;
+  }
+}
